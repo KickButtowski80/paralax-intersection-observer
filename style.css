@@ -1,0 +1,87 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.parallax-container {
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.parallax-layer {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg'); /* Replace with your image */
+  opacity: 1;
+}
+
+.layer2 {
+  background-image: url('https://images.pexels.com/photos/842519/pexels-photo-842519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image */
+  transform: translateZ(-2) scale(2.3);
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+.layer3 {
+  background-image: url('https://images.pexels.com/photos/845798/pexels-photo-845798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image */
+  position: relative;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.layer4 {
+  background-image: url('https://images.pexels.com/photos/2323183/pexels-photo-2323183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image */
+
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  transition: all 2s ease-in;
+}
+.box3 {
+  border: 1px solid blue;
+  background-color: red;
+  position: absolute;
+  left: -200px;
+  transform: translateY(40vh);
+}
+
+.box4 {
+  border: 1px solid blue;
+  background-color: rgb(25, 0, 255);
+  position: absolute;
+  right: -200px;
+  transform: translateY(50vh);
+}
+
+.box3.move-box-l-r {
+ left: 50%;
+}
+.box4.move-box-r-l {
+  right: 50%;
+}
+
+h1,
+p {
+  margin: 0;
+}
